@@ -11,7 +11,6 @@ const Footer = () => {
         </div>
         <div className={styles.rrss}>
           <Image src='/instagram.png' alt='Instagram' width={60} height={50}/>
-          <Image src='/instagram.png' alt='Instagram' width={60} height={50}/>
         </div>
       </div>
     )
