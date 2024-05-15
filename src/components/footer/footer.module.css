@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    bottom: 0%;
+    margin-top: 2rem;
 }
 
 .img{
