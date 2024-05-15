@@ -7,37 +7,60 @@
 .imageWrapper {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start; 
     padding-top: 2rem;
     max-width: 80%;
 }
 
+.image {
+    position: relative; 
+    margin-bottom: 20px;
+  }
+
 .imageText {
-  visibility: hidden;
-  margin-top: 2rem;
-  font-size: larger;
-  max-width: 80%;
-  opacity: 1;
-}
-
-.imgContainer {
-    width: 100%;
-    height: 500px;
-}
-
-.p:hover {
-    margin: 1rem;
+    position: absolute; 
+    top: 50%; 
+    left: calc(100% + 10px); 
+    transform: translateY(-50%); 
+    visibility: hidden;
+    font-size: larger;
+    width: 400px; 
+    height: 200px; 
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 1rem;
+    font-size: medium;
     
-} .imageText {
-  visibility: visible;
-  background-color: rgba(0, 0, 0, 0.466);
-  border-radius: 20px;
-  padding: 1rem;
-  font-size: medium;
+}
+
+.image {
+    padding: 1rem;
+}
+
+.image:hover {
+    padding-bottom: 5rem; 
+    padding-top: 5rem;
+}
+
+.image:hover .imageText {
+    visibility: visible;
+    transition: visibility 0.3s ease;
 }
 
 .mobileImages {
     display: none;
+}
+
+.bgImage {
+    width: 100%;
+    height: 400px;
+    margin-top: 10px;
+    position: relative;
+    animation: bounce 10s infinite;
+}
+
+.img{
+    object-fit: contain;
 }
 
 
@@ -106,4 +129,20 @@
     }
 }
 
-
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(0); /* Posición inicial y final */
+    }
+    50% {
+      transform: translateY(-10px); /* Posición máxima hacia arriba */
+    }
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotateY(0deg); /* Rotación inicial */
+    }
+    100% {
+      transform: rotateY(360deg); /* Rotación completa */
+    }
+  }
