@@ -60,7 +60,7 @@
 }
 
 .img{
-    object-fit: contain;
+    object-fit: cover;
     border-radius: 20px;
 }
 
