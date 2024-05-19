@@ -16,7 +16,7 @@ const ParticlesComponent = (props) => {
     // all options can be found here: https://particles.js.org/docs/interfaces/Options_Interfaces_IOptions.IOptions.html
     return {
       background: {
-        color: "#000", // this sets a background color for the canvas
+        color: "#17202a", // this sets a background color for the canvas
       },
       fullScreen: {
         enable: true, // enabling this will make the canvas fill the entire screen, it's enabled by default

@@ -1,6 +1,8 @@
 const About = () => {
   return (
-    <div>About</div>
+    <div>
+      Un pequeño texto contando un poco sobre Kryptonite
+    </div>
   )
 }
 
