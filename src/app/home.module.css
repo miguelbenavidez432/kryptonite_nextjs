@@ -138,9 +138,9 @@
       transform: translateY(-15px) rotateY(0deg);
     }
     50% {
-      transform: translateY(0) rotateY(180deg); 
+      transform: translateY(0) rotateY(0deg); 
     }
     75% {
-      transform: translateY(-15px) rotateY(180deg);
+      transform: translateY(-15px) rotateY(0deg);
     }
   }
