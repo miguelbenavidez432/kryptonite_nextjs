@@ -84,7 +84,7 @@ const Homepage = () => {
           <Link href='/consultoria' className='text-gray-400 hover:text-wite'> Ver más...</Link>
         </div>
       </div>
-      <main className="w-full mx-auto grid place-items-center rounded-3xl bg-slate-600 bg-opacity-30">
+      <main className="w-100 mx-auto grid place-items-center rounded-3xl bg-slate-600 bg-opacity-30">
         <Slider />
       </main>
     </div>
