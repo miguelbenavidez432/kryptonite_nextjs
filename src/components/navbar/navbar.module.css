@@ -43,16 +43,17 @@
     }
     .mobileLinks{
         position: absolute;
-        top: 100px;
+        top: 270px;
         right: 0;
         width: 50%;
         height: calc(100vh - 100px);
-        background-color: transparent;
+        background-color: var(--bgHeader);
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 10px;
+        text-decoration: solid;
     }
     .button{
         margin-right: 1rem;
