@@ -11,7 +11,7 @@ const Footer = () => {
         <h3 className={styles.h3}>Sabemos como derrotar a Superman</h3>
       </div>
       <div className={styles.rrss}>
-        <Link to="https://www.instagram.com/kryptoniteagency">
+        <Link href="https://www.instagram.com/kryptoniteagency">
           <Image src='/instagram.jpg' alt='Instagram' width={60} height={50} className={styles.img} />
         </Link>
       </div>
