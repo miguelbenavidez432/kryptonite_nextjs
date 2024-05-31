@@ -46,7 +46,7 @@ const Navbar = () => {
   return (
     <div className={styles.container}>
       <div className={styles.logo && styles.container}>
-        <Link href='/'><Image src='/kriptonite-logo.png' alt="Kryptonite" width={100} height={50} className="animate-flip-up animate-infinite animate-duration-[5000ms] animate-delay-1000 animate-ease-linear"/></Link>
+        <Link href='/'><Image src='/kriptonite-logo.png' alt="Kryptonite" width={100} height={50} className="animate-flip-up animate-infinite animate-duration-[5000ms] animate-delay-1000 animate-ease-linear" /></Link>
         <span>Kryptonite Agency</span>
       </div>
       <div className={styles.container}>
@@ -65,9 +65,11 @@ const Navbar = () => {
           <div className={styles.mobileLinks}>
             {navLinks.map((link => (
               <Link
+                onClick={() => setIsOpen(prev => !prev)}
                 className={`${pathName === link.url && styles.active}`}
                 key={link.id}
-                href={link.url}>{link.title}</Link>
+                href={link.url}>{link.title}
+              </Link>
             )))}
           </div>
         }

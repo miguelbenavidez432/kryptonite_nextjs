@@ -14,7 +14,7 @@ const ParticlesComponent = (props) => {
     
     return {
       background: {
-        color: "#000", 
+        color: "", 
       },
       fullScreen: {
         enable: true, 

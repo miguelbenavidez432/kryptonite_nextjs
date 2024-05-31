@@ -5,8 +5,8 @@ const Central = () => {
   return (
     <div className={styles.container}>
       <div className={styles.imgContainer}>
-        <Image src='/kriptonite-logo.png' alt="" width={200} height={100} className="brightness-50"></Image>
-        <Image src='/central_de_medios_2.png' alt="" width={372} height={10} className="brightness-50"></Image>
+        <Image src='/kriptonite-logo.png' alt="" width={100} height={100} className="brightness-50"></Image>
+        <Image src='/central_de_medios_2.png' alt="" width={250} height={100} className="brightness-50"></Image>
       </div>
       <div>
         <p className={styles.p}>

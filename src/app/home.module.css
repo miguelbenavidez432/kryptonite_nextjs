@@ -96,6 +96,13 @@
         margin-left: 20px;
         margin-right: 20px;
     }
+
+    .bgImage{
+        object-fit: contain;
+        border-radius: 20px;
+        max-height: 200px;
+    }
+    
 }
 
 @media (max-width: 640px){
@@ -128,6 +135,13 @@
         margin-left: 20px;
         margin-right: 20px;
     }
+
+    .bgImage{
+        object-fit: contain;
+        border-radius: 20px;
+        max-height: 200px;
+    }
+    
 }
 
 @keyframes bounceAndRotate {
