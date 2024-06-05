@@ -28,7 +28,7 @@ const Homepage = () => {
   return (
     <div className={styles.container}>
       <div className={styles.bgImage}>
-        <Image src="/kriptonite.png" alt="Kryptonite" fill className={styles.img} />
+        <Image src="/kriptonitebg2.png" alt="Kryptonite" fill className={styles.img} />
       </div>
       <div className={styles.imageWrapper}>
         <div className={styles.image} onMouseEnter={(e) => handleMouseEnter(e, 'En nuestra agencia de publicidad nos enorgullece ofrecer soluciones creativas e innovadoras para promover y posicionar marcas en el mercado. Nuestro equipo de expertos multidisciplinarios está comprometido en ofrecer resultados excepcionales a nuestros clientes al implementar estrategias de marketing efectivas y campañas publicitarias impactantes.')} onMouseLeave={handleMouseLeave}>
