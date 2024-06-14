@@ -6,7 +6,8 @@ const Consultoria = () => {
     <div className={styles.container}>
       <div className={styles.imgContainer}>
         <Image src='/kriptonite-logo.png' alt="" width={100} height={100} className="brightness-50"></Image>
-        <Image src='/consultoria_2.png' alt="" width={200} height={100} className="brightness-50"></Image>
+        {/* <Image src='/consultoria_2.png' alt="" width={200} height={100} className="brightness-50"></Image> */}
+        <h1 className={styles.h1}>CONSULTORÍA DE MEDIOS</h1>
       </div>
       <div>
         <p className={styles.p}>
