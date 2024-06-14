@@ -60,7 +60,7 @@ const Homepage = () => {
             posicionar marcas en el mercado. Nuestro equipo de expertos multidisciplinarios está comprometido en ofrecer
             resultados excepcionales a nuestros clientes al implementar estrategias de marketing efectivas y campañas
             publicitarias impactantes.</p>
-          <Link href='/agencia' className='text-gray-400 hover:text-white'> Ver más...</Link>
+          <Link href='/agencia' className='text-gray-400 hover:text-white bg-black'> Ver más...</Link>
         </div>
         <div className={styles.mobileImages}>
           <div className={styles.imageGroup}>
@@ -70,7 +70,7 @@ const Homepage = () => {
           <p className={styles.p}>En nuestra central de medios nos dedicamos a ofrecer soluciones integrales y efectivas para la planificación,
             compra y ejecución de estrategias de medios. Nuestro objetivo es ayudar a las marcas a maximizar su alcance e
             impacto en el mercado, optimizando cada dólar invertido en publicidad.</p>
-          <Link href='/central-de-medios' className='text-gray-400 hover:text-white'> Ver más...</Link>
+          <Link href='/central-de-medios' className='text-gray-400 hover:text-white bg-black'> Ver más...</Link>
         </div>
         <div className={styles.mobileImages}>
           <div className={styles.imageGroup}>
@@ -81,7 +81,7 @@ const Homepage = () => {
             desarrollar y ejecutar estrategias de comunicación efectivas y a medida. Nuestro enfoque radica en comprender
             a fondo las necesidades y objetivos de cada cliente, para así poder diseñar soluciones personalizadas que generen
             un impacto positivo en su reputación y relación con su público objetivo.</p>
-          <Link href='/consultoria' className='text-gray-400 hover:text-wite'> Ver más...</Link>
+          <Link href='/consultoria' className='text-gray-400 hover:text-wite bg-black'> Ver más...</Link>
         </div>
       </div>
       <main className="w-100 mx-auto grid place-items-center rounded-3xl bg-slate-600 bg-opacity-30">
