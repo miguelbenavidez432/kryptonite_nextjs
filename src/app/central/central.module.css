@@ -15,8 +15,17 @@
 
 .p {
     margin: 1rem;
-    background-color: rgba(0, 0, 0, 0.466);
+    background-color: rgba(0, 0, 0, 0.904);
     border-radius: 20px;
     padding: 1rem;
     font-size: medium;
+}
+
+.h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: var(--fontH1);
+    text-align: center;
+    font-size: 40px;
 }
