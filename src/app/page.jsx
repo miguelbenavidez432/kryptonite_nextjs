@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from './home.module.css'
 import Slider from "@/components/slider/Slider";
 import Link from "next/link";
+import { useEffect } from "react";
 
 const Homepage = () => {
 
@@ -14,6 +15,7 @@ const Homepage = () => {
       textElement.style.visibility = 'visible';
       imageElement.style.marginLeft = '-200px';
     }
+
   }
 
   function handleMouseLeave(event) {
@@ -25,10 +27,27 @@ const Homepage = () => {
     }
   }
 
+  useEffect(() => {
+    const images = document.querySelectorAll(`.${styles.overlayImage}`);
+    images.forEach((img, index) => {
+      setTimeout(() => {
+        img.style.opacity = 1;
+      }, index * 3000); // Agregar imágenes cada 2 segundos
+    });
+  }, []);
+
   return (
     <div className={styles.container}>
       <div className={styles.bgImage}>
-        <Image src="/kriptonitebg2.png" alt="Kryptonite" fill className={styles.img} />
+        {/* <Image src="/kriptonitebg2.png" alt="Kryptonite" fill className={styles.img} /> */}
+        <div className={styles.overlayWrapper}>
+          <Image src="/fondo.png" alt="Fondo" fill className={`${styles.overlayImage}`} />
+          <Image src="/foco.png" alt="Foco" width={1500} height={1500} className={`${styles.overlayImage}`} />
+          {/* <Image src="/recuadro_2.png" alt="Recuadro 2" fill className={`${styles.overlayImage}`} /> */}
+          <Image src="/recuadro.png" alt="Recuadro" width={1500} height={1500} className={`${styles.overlayImage}`} />
+          <Image src="/superman.png" alt="Superman" width={1500} height={1500}className={`${styles.overlayImage}`} />
+          <Image src="/ka.png" alt="Ka" width={1500} height={1500} className={`${styles.overlayImage}`} />
+        </div>
       </div>
       <div className={styles.imageWrapper}>
         <div className={styles.image} onMouseEnter={(e) => handleMouseEnter(e, 'En nuestra agencia de publicidad nos enorgullece ofrecer soluciones creativas e innovadoras para promover y posicionar marcas en el mercado. Nuestro equipo de expertos multidisciplinarios está comprometido en ofrecer resultados excepcionales a nuestros clientes al implementar estrategias de marketing efectivas y campañas publicitarias impactantes.')} onMouseLeave={handleMouseLeave}>
@@ -53,8 +72,8 @@ const Homepage = () => {
       <div className={styles.container}>
         <div className={styles.mobileImages}>
           <div className={styles.imageGroup}>
-            <Image src="/kriptonite-logo.png" alt="" width={100} height={30} />
-            <Image src="/agencia_2.png" alt="" width={200} height={75} />
+            <Image src="/kriptonite-logo.png" alt="" width={100} height={10} />
+            <Image src="/agencia_2.png" alt="" width={230} height={75} />
           </div>
           <p className={styles.p}>En nuestra agencia de publicidad nos enorgullece ofrecer soluciones creativas e innovadoras para promover y
             posicionar marcas en el mercado. Nuestro equipo de expertos multidisciplinarios está comprometido en ofrecer
@@ -84,7 +103,7 @@ const Homepage = () => {
           <Link href='/consultoria' className='text-gray-400 hover:text-wite bg-black'> Ver más...</Link>
         </div>
       </div>
-      <main className="w-100 mx-auto grid place-items-center rounded-3xl bg-slate-600 bg-opacity-30">
+      <main className="w-2/5 max-h-96 md:w-3/5 mx-auto grid place-items-center rounded-3xl bg-slate-600 bg-opacity-30 lg:w-1/3">
         <Slider />
       </main>
     </div>
