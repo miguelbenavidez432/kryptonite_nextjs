@@ -33,11 +33,11 @@ const Navbar = () => {
       title: "Contacto",
       url: '/contacto'
     },
-    {
-      id: "nosotros",
-      title: "Nosotros",
-      url: '/nosotros'
-    },
+    // {
+    //   id: "nosotros",
+    //   title: "Nosotros",
+    //   url: '/nosotros'
+    // },
   ];
 
   const pathName = usePathname();
