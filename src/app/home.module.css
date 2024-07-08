@@ -30,11 +30,22 @@
     border-radius: 5px;
     padding: 1rem;
     font-size: medium;
-    
+    transition: visibility 0s, opacity 0.5s ease-in-out;
+    opacity: 0;    
 }
 
 .image {
     padding: 1rem;
+    transition: margin-left 1.5s ease-in-out;
+}
+
+.imageTextVisible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.imageShifted {
+    margin-left: -200px;
 }
 
 .image:hover {
@@ -85,7 +96,7 @@
     width: 100%;
     height: 900px;
     border-radius: 20px;
-    transition: opacity 1s ease-in-out;
+    transition: opacity 5s ease-in-out;
 }
 
 @media (max-width: 768px){
