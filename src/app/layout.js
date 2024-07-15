@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
 import ParticlesComponent from "@/components/particles/Particles";
+import BackButton from "@/components/backButton/BackButton";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
           <Navbar/>
           <ParticlesComponent></ParticlesComponent>
           {children}
+          <BackButton></BackButton>
           <Footer className='footer'/>
           </div>
       </body>

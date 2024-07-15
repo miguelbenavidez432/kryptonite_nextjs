@@ -36,7 +36,7 @@ const Description = ({ activeImage, clickNext, clickPrev }) => {
           </motion.div>
         </div>
       ))}
-      <div className="absolute bottom-2/4 right-0 left-0 w-full flex justify-center items-center gap-4 md:bottom-0">
+      <div className="absolute bottom-0 right-0 left-0 w-full flex justify-center items-center gap-4 invisible md:visible">
         <div className="cursor-pointer" onClick={clickPrev}>
           <Image src={left} alt="Anterior" width={40} height={40} />
         </div>

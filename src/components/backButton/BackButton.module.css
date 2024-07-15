@@ -1,0 +1,24 @@
+/* components/FloatingButton.module.css */
+.floatingButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #333; /* Puedes cambiar el color según tu preferencia */
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    z-index: 1000; 
+  }
+  
+  .floatingButton:hover {
+    background-color: #7a6e6e;
+    transform: scale(1.1);
+  }
+  
