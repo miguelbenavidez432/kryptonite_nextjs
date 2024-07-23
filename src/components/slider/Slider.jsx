@@ -30,8 +30,8 @@ const Slider = () => {
   }, [activeImage]);
 
   return (
-    <main className="w-full mx-auto shadow-2xl rounded-3xl overflow-hidden max-w-5xl">
-      <div className="grid md:grid-cols-2 grid-cols-1 w-full">
+    <main className="w-full mx-auto shadow-2xl rounded-3xl overflow-hidden max-w-5xl md:min-w-full">
+      <div className="grid md:grid-cols-2 grid-cols-2 w-full">
         <div className="flex justify-center items-center p-4 md:p-0 max-h-96">
           {slides.map((elem, idx) => (
             <div
