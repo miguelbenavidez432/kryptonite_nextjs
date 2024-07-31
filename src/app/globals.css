@@ -102,7 +102,7 @@ a{
 
 @media (max-width: 640px){
     .container{
-        width: 475px;
+        width: 375px;
         padding-left: 5px;
         padding-right: 5px;
     }
