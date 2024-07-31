@@ -11,7 +11,7 @@ const Homepage = () => {
     const imageElement = event.target.closest(`.${styles.image}`);
     if (imageElement) {
       const textElement = imageElement.querySelector(`.${styles.imageText}`);
-      textElement.innerHTML = text; // Cambia textContent a innerHTML
+      textElement.innerHTML = text;
       textElement.classList.add(styles.imageTextVisible);
       imageElement.classList.add(styles.imageShifted);
     }
@@ -31,7 +31,7 @@ const Homepage = () => {
     images.forEach((img, index) => {
       setTimeout(() => {
         img.style.opacity = 1;
-      }, index * 1000); // Agregar imágenes cada 1.5 segundos
+      }, index * 1000);
     });
   }, []);
 
@@ -68,10 +68,12 @@ const Homepage = () => {
       </div>
       <div className={styles.container}>
         <div className={styles.mobileImages}>
-          <div className={styles.imageGroup}>
-            <Image src="/kriptonite-logo.png" alt="" width={100} height={10} />
-            <Image src="/agencia_2.png" alt="" width={230} height={75} />
-          </div>
+          <Link href='/agencia'>
+            <div className={styles.imageGroup}>
+              <Image src="/kriptonite-logo.png" alt="" width={100} height={10} />
+              <Image src="/agencia_2.png" alt="" width={230} height={75} />
+            </div>
+          </Link>
           <p className={styles.p}>En nuestra agencia de publicidad nos enorgullece ofrecer soluciones creativas e innovadoras para promover y
             posicionar marcas en el mercado. Nuestro equipo de expertos multidisciplinarios está comprometido en ofrecer
             resultados excepcionales a nuestros clientes al implementar estrategias de marketing efectivas y campañas
@@ -79,20 +81,24 @@ const Homepage = () => {
           <Link href='/agencia' className='text-gray-400 hover:text-white bg-black'> Ver más...</Link>
         </div>
         <div className={styles.mobileImages}>
-          <div className={styles.imageGroup}>
-            <Image src="/kriptonite-logo.png" alt="" width={100} height={30} />
-            <Image src="/central_de_medios_2.png" alt="" width={200} height={75} />
-          </div>
+          <Link href='/central'>
+            <div className={styles.imageGroup}>
+              <Image src="/kriptonite-logo.png" alt="" width={100} height={30} />
+              <Image src="/central_de_medios_2.png" alt="" width={200} height={75} />
+            </div>
+          </Link>
           <p className={styles.p}>En nuestra central de medios nos dedicamos a ofrecer soluciones integrales y efectivas para la planificación,
             compra y ejecución de estrategias de medios. Nuestro objetivo es ayudar a las marcas a maximizar su alcance e
             impacto en el mercado, optimizando cada dólar invertido en publicidad.</p>
           <Link href='/central-de-medios' className='text-gray-400 hover:text-white bg-black'> Ver más...</Link>
         </div>
         <div className={styles.mobileImages}>
-          <div className={styles.imageGroup}>
-            <Image src="/kriptonite-logo.png" alt="" width={100} height={30} />
-            <Image src="/consultoria_2.png" alt="" width={200} height={75} />
-          </div>
+          <Link href='/consultoria'>
+            <div className={styles.imageGroup}>
+              <Image src="/kriptonite-logo.png" alt="" width={100} height={30} />
+              <Image src="/consultoria_2.png" alt="" width={200} height={75} />
+            </div>
+          </Link>
           <p className={styles.p}>En nuestra consultoría de comunicación y estrategia nos especializamos en ayudar a las empresas a
             desarrollar y ejecutar estrategias de comunicación efectivas y a medida. Nuestro enfoque radica en comprender
             a fondo las necesidades y objetivos de cada cliente, para así poder diseñar soluciones personalizadas que generen
@@ -100,7 +106,7 @@ const Homepage = () => {
           <Link href='/consultoria' className='text-gray-400 hover:text-wite bg-black'> Ver más...</Link>
         </div>
       </div>
-      <main className="w-3/5 max-h-[520px] md:w-3/5 mx-auto grid place-items-center rounded-3xl bg-slate-600 bg-opacity-30 lg:w-2/5">
+      <main className=" w-3/5 max-h-[520px] md:w-3/5 md:my-4 mx-auto grid place-items-center rounded-3xl bg-slate-600 bg-opacity-30 lg:w-2/5">
         <Slider />
       </main>
     </div>
