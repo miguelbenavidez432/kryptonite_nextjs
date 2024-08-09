@@ -8,7 +8,7 @@ import Image from "next/image";
 const Description = ({ activeImage, clickNext, clickPrev }) => {
   return (
     <div className="relative w-full h-full flex flex-col justify-between md:rounded-tr-3xl md:rounded-br-3xl p-5">
-      <div className="uppercase text-sm italic right-4 top-0 underline-offset-4 md:pt-0">
+      <div className="uppercase text-xs italic right-4 top-0 underline-offset-4 md:pt-0">
         NUESTROS CLIENTES
       </div>
       {slides.map((elem, idx) => (
@@ -32,7 +32,7 @@ const Description = ({ activeImage, clickNext, clickPrev }) => {
             }}
             className="w-full"
           >
-            <div className="py-0 text-2xl font-extrabold bottom-32 sm:font-extrabold md:py-8 lg:pt-8">{elem.name}</div>
+            <div className="py-0 text-sm font-extrabold bottom-32 sm:font-extrabold md:py-8 lg:pt-8">{elem.name}</div>
           </motion.div>
         </div>
       ))}
